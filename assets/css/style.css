@@ -24,7 +24,7 @@
     --text-color: hsl(var(--second-hue), 8%, 75%);
     --text-color-light: hsl(var(--second-hue), 4%, 55%);
     --body-color: hsl(var(--second-hue), 48%, 8%);
-    --container-color: hsl(var(--second-hue), 3%, 95%);
+    --container-color: hsl(var(--second-hue), 32%, 12%);
     
     /* Font and typography */
     --body-font: 'Poppins', sans-serif;
@@ -209,7 +209,12 @@ img {
     background: linear-gradient(180deg, hsla(var(--first-hue), var(--sat), var(--lig), 1), hsla(var(--first-hue), var(--sat), var(--lig), .2));
     box-shadow: 0 0 16 hsla(var(--first-hue), var(--sat), var(--lig), .4);
 }
+
 /* Change background header */
+.scroll-header {
+    box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
+
 
 /* Home */
 .home-container {
@@ -343,7 +348,50 @@ img {
 }
 
 /* About */
+.about-container {
+    row-gap: 2.5rem;
+}
 
+.about-img {
+    width: 220px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about-data {
+    text-align: center;
+}
+
+.about-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+
+.about-box {
+    background-color: var(--container-color);
+    border-radius: .75rem;
+    padding: .75em .5rem;
+}
+
+.about-icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: .5rem;
+}
+
+.about-title {
+    font-size: var(--small-font-size);
+}
+
+.about-subtitle {
+    font-size: var(--tiny-font-size);
+}
+
+.about-description {
+    margin-bottom: 2rem;
+}
 
 /* Skills */
 
